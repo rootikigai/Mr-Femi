@@ -1,5 +1,5 @@
 public class Munchies{
-	public static int findMultiple(int number){
+/*	public static int findMultiple(int number){
 		return number * 5;
 	}
 
@@ -37,5 +37,19 @@ public class Munchies{
   System.out.println(name + " is " + dogYears + " years old in dog years!");
   }
 
-  
+//public static String findMultiplesOf7Not5(){
+
+  }
+*/
+  public static int computeSumOfNumber(int number){
+    int sum = 0;
+
+    int a = number / 1000;
+    int b = (number / 100) % 10;
+    int c = (number / 10) % 10;
+    int d = (number % 10);
+
+    sum = a + b + c + d;
+    return sum;
+  }
 }
