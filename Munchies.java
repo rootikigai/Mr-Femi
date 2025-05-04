@@ -1,5 +1,5 @@
 public class Munchies{
-/*	public static int findMultiple(int number){
+	public static int findMultiple(int number){
 		return number * 5;
 	}
 
@@ -52,7 +52,7 @@ public class Munchies{
     sum = a + b + c + d;
     return sum;
   }
-*/
+
   public static boolean isLeapYear(int year){
     if(year % 4 == 0){
       return true;
