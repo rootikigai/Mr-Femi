@@ -40,7 +40,7 @@ public class Munchies{
 //public static String findMultiplesOf7Not5(){
 
   }
-*/
+
   public static int computeSumOfNumber(int number){
     int sum = 0;
 
@@ -51,5 +51,12 @@ public class Munchies{
 
     sum = a + b + c + d;
     return sum;
+  }
+*/
+  public static boolean isLeapYear(int year){
+    if(year % 4 == 0){
+      return true;
+    }
+    return false;
   }
 }
