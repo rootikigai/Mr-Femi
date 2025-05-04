@@ -2,4 +2,40 @@ public class Munchies{
 	public static int findMultiple(int number){
 		return number * 5;
 	}
+
+  public static void displayPrimeNumbers(){
+    int count = 0;
+    int number = 2;
+    int diviCount = 0;
+
+    while(count < 50){
+      for(int i = 1; i <= number; i++){
+        if(number % i == 0){
+          diviCount++;
+        }
+      }
+      if(diviCount == 2){
+        System.out.print(number);
+          count++;
+      }
+      number++;
+    }
+  }
+
+  public static String displayAge(int ageYears){
+    int years = ageYears;
+    int months = ageYears * 12;
+    int days = ageYears * 365;
+    int minutes = (ageYears * 365) * 24 * 60;
+    int seconds = (ageYears * 365) * (24 * 60) * 60;
+
+    return "Age in years: " + ageYears + "\nAge in months: " + months + "\nAge in days: " + days + "\nAge in minutes: " + minutes + "\nAge in seconds: " + seconds;
+  }
+
+  public static void displayDogAge(String name, int humanYears){
+  int dogYears = humanYears * 7;
+  System.out.println(name + " is " + dogYears + " years old in dog years!");
+  }
+
+  
 }
